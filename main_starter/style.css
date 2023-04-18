@@ -63,7 +63,7 @@ body {
 
 
 :root {
-  --brown: hsla(24, 56%, 63%, 1);
+  --brown: #B26144;
   --black: hsla(0, 0%, 8%, 1);
   --gray: hsla(0, 0%, 27%, 1);
   --white: hsla(0, 0%, 100%, 1);
@@ -230,7 +230,7 @@ header {
 .h1-heading {
   max-width: 28.125rem;
   mix-blend-mode: difference;
-  color: var(--white);
+  color: var(--brown);
 }
 
 .hero-paragraph {
