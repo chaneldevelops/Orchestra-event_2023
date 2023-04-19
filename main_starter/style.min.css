@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400;500;700;900&family=Outfit:wght@100;300&display=swap);
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
 *{
     margin:0;
     padding:0;
@@ -52,7 +53,7 @@ body {
 
 
 :root{
-    --brown:#B26144;
+    --brown:#AA3C15;
     --black:hsla(0, 0%, 8%, 1);
     --gray:hsla(0, 0%, 27%, 1);
     --white:hsla(0, 0%, 100%, 1);
@@ -80,12 +81,12 @@ body {
 }
 
 .body-m {
-    font:300 1.125rem/2rem Outfit,sans-serif;
+    font:300 1.5rem/2rem 'Libre Baskerville,sans-serif';
     color:var(--gray);
 }
 
 .body-m-white {
-    font:300 1.125rem/2rem Outfit,sans-serif;
+    font:300 1.5rem/2rem 'Libre Baskerville,sans-serif';
     color:var(--white);
 }
 
@@ -202,11 +203,15 @@ header{
 .h1-heading{
     max-width:28.125rem;
     /* mix-blend-mode:difference; */
-    color:var(--brown);
+    color:#A87052;
 }
 
 .hero-paragraph{
     max-width:18.75rem;
+    margin-bottom: 1rem;
+    padding: 1.8rem 1rem 0 1.5rem;
+    color: var(--white);
+    background: var(--black);
 }
 
 .grid{
@@ -307,6 +312,7 @@ footer{
     fill:var(--brown);
 }
 
+
 .social-2 svg{
     display:flex;
     height:1.875rem;
@@ -355,6 +361,10 @@ footer{
     transition:all ease .3s;
 }
 
+.logo {
+    margin: -1rem;
+}
+
 .logo path:hover{
     fill:var(--brown);
     transition:all ease .3s;
@@ -382,7 +392,7 @@ footer{
     }
     
     header{
-        background:var(--white) url(assets/tablet/image-hero.jpg) no-repeat;
+        background:var(--white) url(assets/tablet/conductor-orchestra_tablet.jpg) no-repeat;
     }
     
     .hero-section{
@@ -396,6 +406,7 @@ footer{
     
     .hero-text{
         grid-column:2;
+        margin-bottom: -5rem;
     }
     
     .heading-xl{
@@ -414,7 +425,8 @@ footer{
     }
     
     .body-m{
-        font:300 1rem/1.75rem Outfit,sans-serif;color:var(--gray);
+        font:300 1rem/1.75rem Outfit,sans-serif;
+        color:var(--gray);
     }
     
     .adress{
@@ -430,6 +442,7 @@ footer{
     
     .pb-64{
         padding-bottom:3rem;
+
     }
     
     .grid{
@@ -457,6 +470,12 @@ footer{
     }
     
     }
+
+    @media (min-width: 33.813rem) and (max-width:50rem) {
+        .hero-paragraph {
+            color: var(--white);
+        }
+    }
     
     
      @media (max-width:33.75rem)
@@ -480,6 +499,7 @@ footer{
         
         .hero-paragraph{
             max-width:100%;
+            background: none;
         }
         
         .btn-link{
@@ -491,6 +511,9 @@ footer{
             gap:.625rem;
             max-width:11.25rem;
             align-items:center;
+            margin-left: 1.5rem;
+            margin-top: -2rem;
+            margin-bottom: 4rem;
             justify-content:space-between;
         }
         
