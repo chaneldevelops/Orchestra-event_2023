@@ -409,6 +409,10 @@ footer {
   transition: all ease 0.3s;
 }
 
+.logo {
+  margin: -1.5rem -1.5rem -1.5rem 0.5rem;
+}
+
 .logo-2 path:hover {
   fill: var(--black);
   transition: all ease 0.3s;
@@ -435,7 +439,7 @@ footer {
   }
 
   header {
-    background: var(--white) url(./assets/tablet/conductor-orchestra-tablet.jpg) no-repeat;
+    background: var(--white) url(./assets/new-images/tablet/conductor-orchestra_tablet.jpg) no-repeat;
   }
 
   .hero-section {
